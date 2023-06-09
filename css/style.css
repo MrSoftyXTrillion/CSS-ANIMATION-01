@@ -1,0 +1,41 @@
+/* COMMON CSS STARTS HERE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COMMON CSS ENDS HERE */
+
+/* MAIN CSS STARTS HERE */
+.preloader {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    display: flex;
+}
+.preloader_cnt {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+
+}
+.preloader_cnt_inner {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border-top: 5px solid red;
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* MAIN CSS ENDS HERE */
